@@ -39,10 +39,10 @@ body{
 
 }
 .container{
-  width: 1200px;
+  width: 1300px;
   max-width: 100%;
   margin: 0 auto;
-  padding: 3rem 1.5rem 6rem;
+  padding: 4rem 1.5rem 6rem;
 }
 .flex{
   display: flex;
@@ -93,7 +93,7 @@ footer div.flex,section.art-sec{
 }
 .nav-links ul.flex{
   gap: 1.25rem;
-  font-weight: 700;
+  font-weight: 400;
   font-size: clamp(8px,3vw,1rem);
 }
 
@@ -213,6 +213,7 @@ footer{
   background-color: var(--Very-Dark-Blue);
   color: #fff;
   text-align: left;
+  padding-top: 4rem;
   padding-left: 2rem;
   padding-bottom:0;
 }
@@ -240,7 +241,7 @@ ul.icon {
   margin: 0 auto;
 }
 footer ul li{
-  color: var(--Light-Gray);
+  color: var(--Light-Grayish-Blue);
 }
 ul.icon li i{
   
@@ -300,6 +301,9 @@ ul.icon li i:hover{
   .header-sec{
       margin-bottom: 10rem;
     }
+    .nav-links ul.flex{
+      gap:3.5rem;
+    }
   main::before{
     background: url(./images/bg-curve-desktop.svg)no-repeat top center;
     top: -7rem  ; 
@@ -313,6 +317,7 @@ ul.icon li i:hover{
   }
   .art-sec{
     gap: 10rem;
+    padding-top: 4rem;
   }
   article .art-sec div{
     flex: 1;
