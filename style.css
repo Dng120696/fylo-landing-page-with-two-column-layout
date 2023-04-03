@@ -12,7 +12,7 @@
 
   --Very-Dark-Blue: hsl(243, 87%, 12%);
   --Desaturated-Blue: hsl(238, 22%, 44%);
-
+  --Light-Red: hsl(0, 100%, 63%);
   /* ### Accent */
 
   --Bright-Blue: hsl(224, 93%, 58%);
@@ -97,16 +97,42 @@ footer div.flex,section.art-sec{
   font-size: clamp(8px,3vw,1rem);
 }
 
+form{
+  position: relative;
+}
 input{
   padding: 12px 1rem;
   width: 100%;
   border-radius: 5px;
+  outline: none;
 }
-input[class='email']{
+input[type ='email']{
   border: 1px solid rgba(0,0,0,0.5);
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 
 
+}
+form.error input[type ='email']{
+  border:2px solid var(--Light-Red);
+  
+}
+.error-1{
+
+  top:40%;
+  left: 0;
+}
+.error-2{
+  bottom:40%;
+  left: 0;
+}
+.error-message{
+  font-size: 1rem;
+  position: absolute;
+  color: var(--Light-Red);
+  display: none;
+}
+form.error .error-message{
+  display: block;
 }
 input[class='submit']{
   border: none;
@@ -243,11 +269,14 @@ ul.icon {
 footer ul li{
   color: var(--Light-Grayish-Blue);
 }
-ul.icon li i{
-  
+ i{
+  font-size: 1.2rem;
   padding:10px;
   border: 1px solid #fff;
   border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  text-align: center;
 }
 ul.icon li i:hover{
   border: 1px solid hsl(224, 93%, 65%);

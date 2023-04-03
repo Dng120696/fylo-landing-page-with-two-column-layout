@@ -44,8 +44,9 @@
             Access them wherever you need, share and collaborate with friends, 
             family, and co-workers.
           </p>
-          <form>
-            <input type="email" class="email" name="email" placeholder="Enter your email..." required>
+          <form class = 'form-1'>
+            <input type="email" class="email-1" name="email" placeholder="Enter your email...">
+            <small class="error-message error-1">Your email is not valid</small>
             <input type="submit" class="submit" name="submit" value="Get Started">
           </form>
         </div>
@@ -108,74 +109,78 @@
           </p>
         </div>
         <div class="art-sec-right-col">
-          <form>
-            <input type="email" class="email" name="email" placeholder="email@example.com" required>
+          <form class = 'form-2'>
+            <input type="email" class="email-2" name="email" placeholder="email@example.com" >
+            <small class="error-message error-2">Your email is not valid</small>
             <input type="submit" class="submit" name="submit" value="Get Started For Free">
           </form>
         </div>
       </section>
     </div>
   </article>
+  <div class="bg-footer">
   <footer>
-    <div class="container">
-      <img src="./images/logo copy.svg" alt="logo" class="footer-img">
-      <div class="flex">
-        <div>
-          <ul class="flex">
+      <div class="container">
+        <img src="./images/logo copy.svg" alt="logo" class="footer-img">
+        <div class="flex">
+          <div>
+            <ul class="flex">
+              <li>
+                <img src="./images/icon-phone.svg" alt="phone">
+              </li>
+              <li>
+                Phone: +1-543-123-4567    
+              </li>
+            </ul>
+            <ul class="flex">
+              <li>
+                <img src="./images/icon-email.svg" alt="email">
+              </li>
+              <li>
+                example@fylo.com
+              </li>
+            </ul>
+          </div>
+          <ul>
             <li>
-              <img src="./images/icon-phone.svg" alt="phone">
+               About Us
             </li>
             <li>
-              Phone: +1-543-123-4567    
+               Jobs
+            </li>
+            <li>
+               Press
+            </li>
+            <li>
+               Blog
             </li>
           </ul>
-          <ul class="flex">
+          <ul>
             <li>
-              <img src="./images/icon-email.svg" alt="email">
+              Contact Us
             </li>
             <li>
-              example@fylo.com
+               Terms
+            </li>
+            <li>
+               Privacy
+            </li>
+          </ul>
+          <ul class="icon flex">
+            <li>
+              <i class="fa-brands fa-facebook-f"></i> 
+            </li>
+            <li>
+              <i class="fa-brands fa-twitter"></i>
+            </li>
+            <li>
+              <i class="fa-brands fa-instagram"></i>
             </li>
           </ul>
         </div>
-        <ul>
-          <li>
-             About Us
-          </li>
-          <li>
-             Jobs
-          </li>
-          <li>
-             Press
-          </li>
-          <li>
-             Blog
-          </li>
-        </ul>
-        <ul>
-          <li>
-            Contact Us
-          </li>
-          <li>
-             Terms
-          </li>
-          <li>
-             Privacy
-          </li>
-        </ul>
-        <ul class="icon flex">
-          <li>
-            <i class="fa-brands fa-facebook-f"></i> 
-          </li>
-          <li>
-            <i class="fa-brands fa-twitter"></i>
-          </li>
-          <li>
-            <i class="fa-brands fa-instagram"></i>
-          </li>
-        </ul>
       </div>
     </div>
   </footer>
+  <script src="./script.js"></script>
 </body>
 </html>
